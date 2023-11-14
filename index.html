@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
     <title>Calculadora de IMC</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main id="container">
+      <section id="img">
+        <img src="assets/bg.svg" alt="" />
+      </section>
+
+      <section class="calculator">
+        <form action="" id="form">
+          <h1 class="title">Calculadora IMC</h1>
+
+          <div class="input__box">
+            <label for="weight"> Peso em Kg </label>
+            <div class="input__field">
+                <i class="ri-scales-fill"></i>
+                <input type="number" id="weight" required>
+                <span>Kg</span>
+            </div>
+          </div>
+
+          <div class="input__box">
+            <label for="height"> Altura em metros </label>
+            <div class="input__field">
+                <i class="ri-ruler-line"></i>
+                <input type="number" id="height" required>
+                <span>M</span>
+            </div>
+          </div>
+
+          <button id="calculate">Calcular</button>
+        </form>
+
+        <div id="info">
+            <div id="result">
+                <div id="bmi">
+                    <span id="value"></span>
+                    <span>Seu IMC</span>
+                </div>
+                <div id="description">
+                    <span></span>
+                </div>
+            </div>
+
+            <div id="more__info">
+                <a href="https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/o-que-o-indice-de-massa-corporal-imc-diz-sobre-sua-saude">
+                    Mais informações sobre o IMC
+                    <i class="ri-link-m"></i>
+                </a>
+            </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
